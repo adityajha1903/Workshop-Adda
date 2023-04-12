@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63688999637",
+    "project_id": "workshop-adda-b3bcd",
+    "storage_bucket": "workshop-adda-b3bcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63688999637:android:34b3e857202c27225b985c",
+        "android_client_info": {
+          "package_name": "com.example.workshopadda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63688999637-0o9fkhksoadgia2f5rjaig7bbv529or4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-6jbAyQ-9lxQFT2xe33HXeq5LiTxQ-84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63688999637-0o9fkhksoadgia2f5rjaig7bbv529or4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

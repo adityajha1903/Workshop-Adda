@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:id="@+id/proPicFrame_profile_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2.0001dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/frame_bg">
+
+            <TextView
+                android:id="@+id/firstLetterTV_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:text="A"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/proPicIV_profile_activity"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="2dp"
+                android:theme="@style/CircularImageView"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"/>
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginHorizontal="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="55dp">
+
+                <ImageView
+                    android:id="@+id/personIV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/baseline_person_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="#757474"
+                    android:contentDescription="@string/user_name" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/personIV"
+                    app:layout_constraintStart_toEndOf="@id/personIV"
+                    app:layout_constraintBottom_toBottomOf="@id/personIV">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textSize="13sp"
+                        android:textColor="#757474"/>
+                    <TextView
+                        android:id="@+id/userNameTV_profile_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Aditya jha"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#757474"
+                    android:contentDescription="@string/line"
+                    app:layout_constraintTop_toBottomOf="@id/personIV"
+                    tools:layout_editor_absoluteX="-1dp" />
+
+                <ImageView
+                    android:id="@+id/mobileIV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/baseline_space_dashboard_24"
+                    app:layout_constraintTop_toBottomOf="@id/line1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="#757474"
+                    android:contentDescription="@string/workshops_applied" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/mobileIV"
+                    app:layout_constraintStart_toEndOf="@id/mobileIV"
+                    app:layout_constraintBottom_toBottomOf="@id/mobileIV">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/workshops_applied"
+                        android:textSize="13sp"
+                        android:textColor="#757474"/>
+                    <TextView
+                        android:id="@+id/userAppliedWorkshops"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#757474"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="32dp"
+                    app:layout_constraintTop_toBottomOf="@id/mobileIV"
+                    android:contentDescription="@string/line" />
+
+                <ImageView
+                    android:id="@+id/emailIV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/baseline_email_24"
+                    app:layout_constraintTop_toBottomOf="@id/line2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="#757474"
+                    android:contentDescription="@string/email" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/emailIV"
+                    app:layout_constraintStart_toEndOf="@id/emailIV"
+                    app:layout_constraintBottom_toBottomOf="@id/emailIV">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textSize="13sp"
+                        android:textColor="#757474"/>
+                    <TextView
+                        android:id="@+id/userEmailTV_profile_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="jha.aditya1903@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#757474"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="32dp"
+                    app:layout_constraintTop_toBottomOf="@id/emailIV"
+                    android:contentDescription="@string/line" />
+
+
+                <Button
+                    android:id="@+id/sign_out_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/line3"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/sign_out"
+                    android:layout_marginHorizontal="32dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
